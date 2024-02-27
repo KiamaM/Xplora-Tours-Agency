@@ -1,0 +1,32 @@
+<div>
+    <div *ngIf="visible2" class="successDiv"  style="color: green; text-align: center; width: 100%; font-size: 14px;">{{successMsg}}</div> 
+    <div *ngIf="visible" class="errorDiv" style="color: red; text-align: center;">{{errorMsg}}</div>  
+    <table class="admin-table">
+        
+        <tr>
+            <th>No.</th>
+            <th>Destination</th>
+            <th>Category</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>        
+        <tr *ngFor="let tour of toursAll; let i = index">
+            
+            <p *ngIf="toursAll.length < 1">Add a tour to view</p>
+            <td>{{ i + 1 }}.</td>
+            <td>{{ tour.destination }}</td>
+            <td>{{ tour.category }}</td>
+            <td>{{ tour.start_date | date: 'mediumDate' }}</td>
+            <td>{{ tour.end_date | date: 'mediumDate' }}</td>
+            <td>{{ tour.price }} Ksh</td>
+            <td>
+                <button routerLink="update-tour/{{tour.tour_id}}" >Edit</button>
+                <button (click)="deleteTour(tour.tour_id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+    
+</div>
+<router-outlet></router-outlet>

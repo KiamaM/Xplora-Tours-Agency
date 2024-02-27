@@ -1,0 +1,61 @@
+.footer{
+    height: 30vh;
+    overflow-y: hidden;
+}
+
+
+.quickLinks div{
+    /* margin-bottom: 0.5vh; */
+}
+
+.quickLinks{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1vh; */
+    justify-content: space-between;
+    color:white;
+    padding-bottom: 50px;
+}
+
+.qlink{
+    /* border: 1px solid blue;   */
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color:#320425;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    position:relative;
+    /* gap: 0.5vh; */
+}
+
+@media only screen and (max-width:428px) {
+    .vid{
+      display: none;
+    }
+    
+  #newProject{
+    width: 70%;
+  }
+  
+  .qlink{
+    flex-wrap: wrap;
+    width: 95vw;
+    font-size: 12px;
+  }
+  
+  .addProjectBtn{
+    width: 60vw;
+  }
+  
+  .adminDisplay hr{
+    width: 97vw;
+  }
+    
+    
+    
+    
+    
+    
+    }

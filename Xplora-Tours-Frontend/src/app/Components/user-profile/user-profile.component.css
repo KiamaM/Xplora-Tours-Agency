@@ -1,0 +1,121 @@
+/* Style for the entire dashboard */
+.dashboard {
+  display: flex;
+}
+
+/* Style for the main content area */
+.main {
+  display: flex;
+  width: 100%;
+}
+
+/* Style for the sidebar */
+.userSidebar {
+  width: 10%; /* Adjust width as needed */
+  padding: 20px;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+/* Style for the navigation buttons */
+.sidebarNav button {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 10vh;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebarNav button:hover {
+  background-color: #ddd; /* Adjust hover background color as needed */
+}
+
+/* Style for the main content area */
+.tours {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 80%;
+  /* border: 1px solid blue; */
+}
+
+/* Style for success and error messages */
+.successDiv, .errorDiv {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.successDiv {
+  background-color: #28a745; /* Adjust success message background color as needed */
+  color: white;
+}
+
+.errorDiv {
+  background-color: #dc3545; /* Adjust error message background color as needed */
+  color: white;
+}
+
+
+.bookedTours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 20%;
+
+}
+
+.bookedTourCard {  
+  width:100%;
+  background-color: #f8f5f7;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bookedTourCard img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.bookedTourCard h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bookedTourCard p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.bookedTourCard button {
+  background-color: #38ACEC;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookedTourCard button:hover {
+  background-color: #2c85bb;
+}
+
+@media only screen and (max-width: 768px) {
+  .projectCard {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .projectCard {
+    width: calc(100% - 20px);
+  }
+}
+

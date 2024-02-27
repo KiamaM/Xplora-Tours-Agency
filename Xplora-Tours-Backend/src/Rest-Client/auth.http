@@ -1,0 +1,13 @@
+###
+
+GET  http://localhost:4500/auth/checkdetails
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjA2MmI1YzYtOTZiMy00ZTYxLWFjN2YtNzU3N2U3MTVjMGNjIiwiZW1haWwiOiJqYW5ldEBleGFtcGxlLmNvbSIsInBhc3N3b3JkIjoiJDJiJDA1JGtGMjFoOENDM1laak9CSVIxTG90cU9ZajVOSFBSdkRTeTV4STdVRTZkMkFxVmc4WFJjaUYyIiwiaXNfZGVsZXRlZCI6ZmFsc2UsImlzX3dlbGNvbWVkIjp0cnVlLCJpYXQiOjE3MDg2NTE3MTYsImV4cCI6MTcwODY1NTMxNn0.TWe2kjxFwZk2Q3NoOIIb8Nl8RKNCiEkZLEvddUbrQf8
+###
+POST http://localhost:4500/auth/login
+Content-Type: application/json
+
+{
+    "email":"janet@example.com",
+    "password":"test12"
+}

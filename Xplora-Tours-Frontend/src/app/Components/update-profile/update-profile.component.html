@@ -1,0 +1,38 @@
+<div class="title">
+    <h1 routerLink="/">XPLORA</h1>
+    <p>Tours & Travels</p>
+</div>
+<form class="sigUPForm"[formGroup]="updateUserForm" (ngSubmit)="updateUser()">
+    <div class="signUpInputs">   
+        <div class="name">
+            <div class="firstName">
+                <label for="fname">First Name:*</label>
+                <input type="text" id="fname" formControlName = "firstName" placeholder="John">
+            </div>    
+            <div class="email">
+                <label for="signUPEmail">Email:</label>
+                <br>
+                <input type="email" id="signUPEmail" formControlName = "email" placeholder="johndoe@example.com">     
+            </div>  
+        </div>
+        <div class="emailPw">
+            <div class="lastName">
+                <label for="lastName">Last Name:*</label>
+                <br>
+                <input type="text" name="lname" id="lastName"  placeholder="Doe" formControlName="lastName">
+            </div>
+            <div class="passwordField">
+                <label for="signUPPassword">Password:*</label>
+                <br>
+                <input type="password" name="password" id="signUPPassword"  placeholder="*************" formControlName="password">
+                <br>
+            </div>
+        </div>      
+
+    </div>
+    <div class="signUpBtn">
+        <input type="submit" value="UPDATE PROFILE">
+    </div>
+</form>    
+
+<router-outlet></router-outlet>

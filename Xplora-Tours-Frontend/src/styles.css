@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0px;    
+    font-family: sans-serif;
+    overflow-x: hidden;
+
+}
+
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+input[type = "submit"]{
+    cursor: pointer;
+}

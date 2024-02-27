@@ -1,0 +1,24 @@
+<div>
+    <div *ngIf="visible2" class="successDiv"  style="color: green; text-align: center; width: 100%; font-size: 14px;">{{successMsg}}</div> 
+    <div *ngIf="visible" class="errorDiv" style="color: red; text-align: center;">{{errorMsg}}</div>  
+    <table class="admin-table">
+        <tr>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let user of users; let i = index">
+            <p *ngIf="users.length < 1">Currently, no users have signed up</p>
+            <td>{{ i + 1 }}.</td>
+            <td>{{ user.first_name }}</td>
+            <td>{{ user.last_name }}</td>
+            <td>{{ user.email}}</td>
+            <td>
+                <button (click)="deleteUser(user.user_id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+    
+</div>

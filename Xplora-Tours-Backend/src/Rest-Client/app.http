@@ -1,0 +1,37 @@
+GET http://localhost:4500/users
+Content-Type: application/json
+
+
+
+###
+POST http://localhost:4500/users
+Content-Type: application/json
+
+{
+    "first_name":"May",
+    "last_name":"Dean",
+    "email":"mailing@mailed.com",
+    "password":"Passed"    
+}
+###
+POST     http://localhost:4500/book/
+Content-Type: application/json
+
+
+{
+    "user_id": "58eebbf1-1a7d-42e0-8ee8-af393f4def11",
+    "tour_id": "2d35ba3a-e08b-4f2b-b244-b7ae33423bd7"
+ 
+}
+
+
+
+###
+GET     http://localhost:4500/book/d3ba4652-58f7-489d-9af3-bd5367662b9c
+Content-Type: application/json
+
+
+###
+
+GET     http://localhost:4500/tours/
+Content-Type: application/json

@@ -1,0 +1,39 @@
+<div class="title">
+    <h1>XPLORA</h1>
+    <p>Tours & Travels</p>
+</div>
+<div class="auth">
+    <div class="logins">
+        <div class="toggleSignIn">
+            <button>LOG IN</button>
+            <button routerLink="/register" style="cursor: pointer;"id="toLogInForm">SIGN UP</button>
+        </div>
+        <p>LOG IN TO  DISCOVER</p>
+        <div *ngIf="visible2" class="successDiv"  style="color: green; text-align: center; width: 100%;">{{successMsg}}</div> 
+        <div *ngIf="visible" class="errorDiv" style="color: red; text-align: center;">{{errorMsg}}</div>   
+        <form #LoginForm = 'ngForm' (ngSubmit)="login(LoginForm.value)" class="loginForm">
+            <div class="loginInputs">            
+                <div class="emailField">
+                    <label for="loginEmail">Email:*</label>
+                    <br>
+                    <input type="email" name="email" id="loginEmail" ngModel placeholder="johndoe@example.com">
+                    <a routerLink="/" id="toHome">Back to Home</a>
+                </div>
+                <div class="passwordField">
+                    <label for="loginPassword">Password:*</label>
+                    <br>
+                    <input type="password" name="password" id="loginPassword" ngModel placeholder="*************">
+                    <br>
+                </div>
+            </div>
+            <div class="forgot">
+                <a routerLink="/reset-password">Forgot Password?</a><br>
+            </div>
+            <div class="loginBtn">
+                <input type="submit" value="LOG IN">
+            </div>
+            <p>This site is protected by its Privacy Policy and Terms of Service apply</p>
+        </form>    
+    </div>
+</div>
+<router-outlet></router-outlet>

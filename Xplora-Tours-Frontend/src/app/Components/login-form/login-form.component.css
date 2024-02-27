@@ -1,0 +1,138 @@
+.title{
+    text-align: center;
+    width: 100vw;
+    background-color: #320425;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.title p{
+    font-size: 12px;
+    text-shadow:#320425;
+}
+
+.title h1{
+    font-weight: normal;
+    font-size: 25px;
+}
+.auth{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+#toLogInForm{
+    background-color: #320425;
+    color: white;
+}
+
+
+.logins{
+    width: 55%;
+    background-color: white;
+    /* border: 1px solid blue; */
+}
+
+.logins button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    color: #320425;
+    font-weight: bold;
+    background-color: rgb(247, 245, 245);
+}
+
+.logins p{
+    text-align: center;
+    color: #472a3e;
+    font-weight:500;
+    margin: 20px;   
+    font-size: 20px;
+}
+.toggleSignIn{
+    display: flex;
+}
+
+.loginForm{
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.loginForm p{
+    font-size: 11px;
+}
+
+
+
+.loginInputs{
+    display: flex;   
+    width: 100%;
+        /* border: 1px solid blue; */
+
+}
+
+.loginInputs input{
+    width: 90%;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgb(187, 184, 184);
+    padding: 10px;
+    border: 1px solid rgb(187, 184, 184);
+}
+
+.loginInputs label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.emailField{
+    flex: 1;
+    padding-left: 20px;
+}
+
+
+.passwordField{
+    flex: 1;
+}
+
+.forgot{
+    width: 98%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 20px;
+}
+
+.forgot a{
+    color: #4b3042;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#toHome{
+    color: #4b3042;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.loginBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.loginBtn input{
+    width: 30%;
+    height: 45px;
+    background-color: #320425;
+    color: white;
+}
+

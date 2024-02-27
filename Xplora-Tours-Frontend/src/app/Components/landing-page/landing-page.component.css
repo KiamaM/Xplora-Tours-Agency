@@ -1,0 +1,218 @@
+.landingPageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color:#ece4ea;
+
+}
+
+.mainContent{   
+    display: flex;    
+    flex-direction: column; 
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../../assets/beach.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.quickLinks{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+    padding: 10px;
+    background-color:transparent;
+    width: 100%;
+    color: white;
+    margin-bottom: 27vh;
+}
+
+
+#discover{
+    border: none;
+    background-color:#320425;
+    width: 15%;
+    height: 50px;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
+.search{
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.search input{
+    width: 40%;
+    border:none;
+    height: 40px;
+    padding: 10px;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.searchBar button{
+    background-color:white;
+    border: none;
+    width: 40px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+.categories svg{
+    color: #320425;
+}
+
+.categories h3{
+    font-weight:700;
+    font-size: 17px;
+}
+
+.icons{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.vid{
+    margin-top: 10px;
+}
+
+
+.reviews{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-bottom: 10rem;
+    flex-wrap: wrap;
+}
+
+.rev{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    height: 20rem;
+    width: 20rem;
+}
+
+.rev p{
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+
+
+  .tours {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 90%;
+  }
+  
+  .userDisplay {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .activeProjects {
+    padding: 20px;
+  }
+  
+  .activeProjects img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .activeProjects p {
+    margin: 10px 0;
+  }
+  
+  .howMany {
+    color: #666;
+  }
+  
+  .projectsAssigned p {
+    margin: 5px 0;
+  }
+  
+  #assignedTotal {
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+
+@media only screen and (max-width:428px) {
+    .vid{
+      display: none;
+    }
+    
+  #newProject{
+    width: 70%;
+  }
+  
+  .adminTop{
+    width: 80vw;
+    gap: 40px;
+  
+  }
+  
+  .addProjectBtn{
+    width: 60vw;
+  }
+  
+  .adminDisplay hr{
+    width: 97vw;
+  }
+    
+    
+    
+    
+    
+    
+    }

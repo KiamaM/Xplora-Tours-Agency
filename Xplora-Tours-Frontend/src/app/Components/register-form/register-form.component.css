@@ -1,0 +1,146 @@
+.home{
+    background-color:#320425;
+    color: white;
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: 11px;
+    display: flex;
+    gap: 5px;
+}
+
+.title{
+    text-align: center;
+    width: 100vw;
+    background-color: #320425;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.title p{
+    font-size: 12px;
+    text-shadow:#320425;
+}
+
+.title h1{
+    font-weight: normal;
+    font-size: 25px;
+}
+.auth{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+#toSignUpForm{
+    background-color: rgb(226, 226, 226);
+    color:#320425;
+}
+
+
+.signUpCred{
+    width: 55%;
+    background-color: white;
+    /* border: 1px solid blue; */
+}
+
+.signUpCred button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color:#320425;
+}
+
+.signUpCred p{
+    text-align: center;
+    color: #472a3e;
+    font-weight:500;
+    margin: 20px;   
+    font-size: 20px;
+}
+.toggleSignIn{
+    display: flex;
+}
+
+.sigUPForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid blue; */
+}
+
+.sigUPForm p{
+    font-size: 11px;
+}
+
+
+.signUpInputs{
+    display: flex;  
+    flex-direction: column; 
+    width: 80%;
+
+}
+
+.signUpInputs input{
+    width: 90%;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgb(187, 184, 184);
+    padding: 10px;
+    border: 1px solid rgb(187, 184, 184);
+}
+
+.signUpInputs label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.name{
+    flex:1
+}
+
+.emailPw{
+    flex: 1;
+}
+
+.forgot{
+    width: 98%;
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 20px;
+}
+
+.forgot a{
+    color: #4b3042;
+    font-size: 13px;
+}
+
+.signUpBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.signUpBtn input{
+    width: 30%;
+    height: 45px;
+    background-color: #320425;
+    color: white;
+}
+
+.errorDiv{
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+}

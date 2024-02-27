@@ -1,0 +1,41 @@
+<router-outlet></router-outlet>
+
+<div class="drawer-container" [ngClass]="{'drawer-open': isTourDrawerOpen}">
+    <div class="newTourContainer">
+        <div class="addNewTourDiv">    
+            <p id="updateTourTitle">Edit this tour</p>
+            <form class="updateTourForm"[formGroup]="updateTourForm" (ngSubmit)="updateTour()">
+                <label for="selectTourDrpdwn">Tour category:</label>
+                <select name="tourOptions" id="selectTourDrpdwn"  formControlName = "category">
+                    <option value="HIKE">HIKE</option>
+                    <option value="CULTURAL EXCURSION">CULTURAL EXCURSION</option>
+                    <option value="WEEKEND GETAWAY">WEEKEND GETAWAY</option>
+                </select>
+                <div class="destinationDiv">
+                    <label for="destination">Destination:*</label>
+                    <br>
+                    <input type="text" id="destination" [value]="tour.destination" formControlName = "destination" placeholder="Where?">
+                </div>   
+                <div class="fromDiv">
+                    <label for="from">From:*</label>
+                    <br>
+                    <input type="date" name="from" id="from" placeholder="From?" [value]="tour.start_date| date:'yyyy-MM-dd'" formControlName="start_date">
+                </div> 
+    
+                <div class="toDiv">
+                    <label for="to">To:*</label>
+                    <br>
+                    <input type="date" name="to" id="to"  placeholder="To?"[value]="end_date" formControlName="end_date">
+                </div>
+                <div class="priceDiv">
+                    <label for="price">Charges:*</label>
+                    <br>
+                    <input type="number" id="price" formControlName = "price" [value]="tour.price | number" placeholder="Charges">     
+                </div>  
+                <div class="bookBtn">
+                    <input type="submit" value="UPDATE TOUR">
+                </div>
+            </form>    
+        </div>
+    </div>
+    

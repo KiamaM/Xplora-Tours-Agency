@@ -1,0 +1,89 @@
+.newTourContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+}
+
+.addNewTourDiv{
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    /* padding: 20px; */
+    /* border: 1px solid blue; */
+}
+
+#close{
+    color: #320425;
+}
+
+.addNewTourDiv button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    color: #320425;
+    font-weight: bold;
+    background-color: rgb(218, 213, 213);
+}
+
+.addNewTourDiv p{
+    /* text-align: center; */
+    color: #472a3e;
+    font-weight:500;
+    margin: 20px;   
+    font-size: 18px;
+}
+
+
+.addTourForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+}
+
+.addTourForm input{
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgb(187, 184, 184);
+    padding: 10px;
+    border: 1px solid rgb(187, 184, 184);
+}
+
+#selectTourDrpdwn{
+    width: 85%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(187, 184, 184);
+    text-align: center;
+}
+
+.addTourForm label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.bookBtn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.bookBtn input{
+    width: 100%;
+    height: 45px;
+    background-color: #320425;
+    color: white;
+}
+

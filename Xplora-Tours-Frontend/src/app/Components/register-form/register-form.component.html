@@ -1,0 +1,47 @@
+<div class="title">    
+    <h1 routerLink="/" style="cursor: pointer;">XPLORA</h1>
+    <p>Tours & Travels</p>
+</div>
+<div class="auth">
+    <div class="signUpCred">
+        <div class="toggleSignIn">
+            <button routerLink="/login" style="cursor: pointer;">LOG IN</button>
+            <button  id="toSignUpForm">SIGN UP</button>
+        </div>
+        <p>SIGN UP</p>
+        <form class="sigUPForm"[formGroup]="signUpForm" (ngSubmit)="registerUser()">
+            <div class="signUpInputs">   
+                    <div class="firstName">
+                        <label for="fname">First Name:*</label>
+                        <input type="text" id="fname" formControlName = "first_name" placeholder="John">
+                        <div *ngIf="signUpForm.get('first_name')?.invalid && signUpForm.get('first_name')?.touched" class="errorDiv">First name is required</div>
+                    </div>    
+                    <div class="lastName">
+                        <label for="lastName">Last Name:*</label>
+                        <br>
+                        <input type="text" name="lname" id="lastName"  placeholder="Doe" formControlName="last_name">
+                        <div *ngIf="signUpForm.get('last_name')?.invalid && signUpForm.get('last_name')?.touched" class="errorDiv">Last name is required</div>  
+                    </div>
+                    <div class="email">
+                        <label for="signUPEmail">Email:</label><br>
+                        <input type="email" id="signUPEmail" formControlName = "email" placeholder="johndoe@example.com">  
+                        <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched" class="errorDiv">Email is required</div>   
+                        <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched && signUpForm.get('email')?.dirty" class="errorDiv">Invalid format</div>
+                    </div>  
+                    <div class="passwordField">
+                        <label for="signUPPassword">Password:*</label>
+                        <br>
+                        <input type="password" name="password" id="signUPPassword"  placeholder="*************" formControlName="password">
+                        <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched" class="errorDiv">Password is required</div>  
+                        <br>
+                    </div>
+                </div>      
+
+            <div class="signUpBtn">
+                <input type="submit" value="SIGN UP">
+            </div>
+            <p>By submitting this form, I agree to the xplora DISCOVERY Terms and Conditions. </p>
+        </form>    
+    </div>
+</div>
+<router-outlet></router-outlet>
